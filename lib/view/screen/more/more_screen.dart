@@ -171,7 +171,7 @@ class _MoreScreenState extends State<MoreScreen> {
                   ListTile(
                     leading: Image.asset(Images.logo_image, width: 25, height: 25, fit: BoxFit.fill, color: ColorResources.getPrimary(context)),
                     title: Text(getTranslated('app_info', context), style: titilliumRegular.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
-                    trailing: Text(version),
+                    trailing: Text(version ??""),
                   ),
 
                   isGuestMode

@@ -524,34 +524,27 @@ class Announcement {
   String _textColor;
   String _announcement;
 
-  Announcement({String status, String color,String textColor, String announcement}) {
-    if (status != null) {
-      this._status = status;
-    }
-    if (color != null) {
-      this._color = color;
-    }
-    if (textColor != null) {
-      this._textColor = textColor;
-    }
-    if (announcement != null) {
-      this._announcement = announcement;
-    }
+  Announcement({String status, String color, String textColor, String announcement}) {
+    this._status = status ?? '';
+    this._color = color;
+    this._textColor = textColor;
+    this._announcement = announcement;
   }
 
   String get status => _status;
   String get color => _color;
   String get textColor => _textColor;
   String get announcement => _announcement;
+
   Announcement.fromJson(Map<String, dynamic> json) {
-    _status = json['status'];
+    _status = json['status'] ?? '';
     _color = json['color'];
     _textColor = json['text_color'];
     _announcement = json['announcement'];
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data = Map<String, dynamic>();
     data['status'] = this._status;
     data['color'] = this._color;
     data['text_color'] = this._textColor;

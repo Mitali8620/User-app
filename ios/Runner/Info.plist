@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>6Valley</string>
+	<string>ShopOnSale</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -79,7 +79,7 @@
     <key>FacebookAppID</key>
     <string>379441383724160</string>
     <key>FacebookDisplayName</key>
-    <string>6Valley</string>
+    <string>ShopOnSale</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
       <string>fbapi</string>

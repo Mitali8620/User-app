@@ -1,8 +1,10 @@
 import 'package:flutter_sixvalley_ecommerce/data/model/response/language_model.dart';
 
 class AppConstants {
-  static const String APP_NAME = '6valley';
-  static const String BASE_URL = 'https://6valley.6amtech.com';
+  static const String APP_NAME = 'ShopOnSale';
+//  static const String BASE_URL = 'https://6valley.6amtech.com';
+
+  static const String BASE_URL = 'https://shoponsells.com';
   static const String USER_ID = 'userId';
   static const String NAME = 'name';
   static const String CATEGORIES_URI = '/api/v1/categories';

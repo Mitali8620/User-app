@@ -155,22 +155,26 @@ class Product {
     _userId = json['user_id'];
     _name = json['name'];
     _slug = json['slug'];
+
     if (json['category_ids'] != null) {
       _categoryIds = [];
       json['category_ids'].forEach((v) {
         _categoryIds.add(new CategoryIds.fromJson(v));
       });
     }
+
     _unit = json['unit'];
     _minQty = json['min_qty'];
     _images = json['images'] != null ? json['images'].cast<String>() : [];
     _thumbnail = json['thumbnail'];
+
     if (json['colors'] != null) {
       _colors = [];
       json['colors'].forEach((v) {
         _colors.add(new ProductColors.fromJson(v));
       });
     }
+
     if(json['attributes'] != null) {
       _attributes = json['attributes'].cast<String>();
     }

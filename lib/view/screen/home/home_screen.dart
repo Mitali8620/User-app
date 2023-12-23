@@ -367,7 +367,11 @@ class _HomePageState extends State<HomePage> {
 
                       ],
                     ),
-                    Provider.of<SplashProvider>(context, listen: false).configModel.announcement.status == '1'?
+
+
+
+                    (Provider.of<SplashProvider>(context, listen: false).configModel.announcement != null)?
+                   (( Provider.of<SplashProvider>(context, listen: false).configModel.announcement.status == '1') ?? "0")?
                     Consumer<SplashProvider>(
                       builder: (context, announcement, _){
                         return announcement.onOff? Padding(
@@ -376,7 +380,7 @@ class _HomePageState extends State<HomePage> {
                         ):SizedBox();
                       },
 
-                    ):SizedBox(),
+                    ):SizedBox():SizedBox(),
                   ],
                 ),
               )
